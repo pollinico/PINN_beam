@@ -72,7 +72,7 @@ def loss_data(params, x_BC, u_BC, uxx_BC):
     loss = jnp.mean((u - u_BC)**2) + jnp.mean((uxx - uxx_BC)**2)
     return loss
 
-# Lorr (error) function due to PDE residual
+# Loss (error) function due to PDE residual
 @jit
 def loss_pde(params, x_PDE, p, EI):
     u_xxxx = net_fxxxx(params)
