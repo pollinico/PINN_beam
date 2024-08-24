@@ -107,7 +107,6 @@ if __name__ == "__main__":
     dx = Lbeam / (N_u-1)
     print("dx: ", dx)
     layers = [1, 10, 1]
-    Nmax = 5000 # Max number of iterations for training the NN
 
 
     params = init_network_params(layers, random.PRNGKey(1234))
